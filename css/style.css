@@ -19465,3 +19465,29 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
         width: 150px; /* Reducir el logo en móviles */
     }
 }
+
+/* Estilos base para los iconos */
+.nuevo-social {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    justify-content: center;
+}
+
+.nuevo-social li {
+    display: inline-block;
+}
+
+.nuevo-social a {
+    font-size: 20px;
+    color: #1e4267; /* Color base de los iconos (igual que en contacto) */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover: cambia el color a verde */
+.nuevo-social a:hover {
+    color: #4fbb75 !important;
+    transform: scale(1.2); /* Hace el icono un poco más grande al pasar el mouse */
+}
