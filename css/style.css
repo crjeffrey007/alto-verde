@@ -19402,51 +19402,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     text-align: center; /* Centra el texto debajo del logo */
 }
 
-/* Ajuste del logo */
-.nuevo-logo {
-    width: 200px; /* Ajusta el tamaño según sea necesario */
-    margin-bottom: 10px;
-}
-
-/* Cambio de color al pasar el mouse sobre el menú */
-.nuevo-menu a:hover {
-    color: #4fbb75 !important; /* Usa el mismo verde que en la parte de contacto */
-    transition: color 0.3s ease; /* Suaviza el cambio de color */
-}
-
-/* Estilos generales del header */
-.nuevo-header {
-    background-color: #f8f8f8;
-    padding: 10px 0;
-}
-
-/* Menú: Estilos generales */
-.rd-navbar-nav {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.rd-navbar-nav li {
-    display: inline-block;
-}
-
-.rd-navbar-nav a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: #1e4267; /* Color normal del texto */
-    transition: color 0.3s ease;
-}
-
-/* Hover: Cambia el color del menú */
-.rd-navbar-nav a:hover {
-    color: #4fbb75 !important; /* Color verde */
-}
-
 /* Estilos base para los iconos */
 .nuevo-social {
     list-style: none;
@@ -19475,9 +19430,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /* Estilos generales del header */
 .nuevo-header {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     padding: 10px 0;
-    position: relative;
 }
 
 /* Ajuste del Logo */
@@ -19514,27 +19468,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     color: #4fbb75 !important; /* Color verde */
 }
 
-/* Estilos para el botón de WhatsApp en el Header */
-.nuevo-header-whatsapp {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.nuevo-header-whatsapp a {
-    font-size: 24px;
-    color: #4fbb75; /* Color de WhatsApp */
-    text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-/* Efecto al pasar el mouse */
-.nuevo-header-whatsapp a:hover {
-    color: #1e4267; /* Color oscuro en hover */
-    transform: scale(1.2);
-}
-
 /* Responsive para móviles */
 @media (max-width: 768px) {
     .rd-navbar-nav {
@@ -19544,10 +19477,5 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
     .nuevo-logo {
         width: 150px; /* Reducir el logo en móviles */
-    }
-
-    .nuevo-header-whatsapp {
-        right: 10px; /* Ajustar la posición en móviles */
-        font-size: 22px;
     }
 }
