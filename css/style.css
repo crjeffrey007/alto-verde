@@ -19407,3 +19407,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     width: 200px; /* Ajusta el tamaño según sea necesario */
     margin-bottom: 10px;
 }
+
+/* Cambio de color al pasar el mouse sobre el menú */
+.nuevo-menu a:hover {
+    color: #4fbb75 !important; /* Usa el mismo verde que en la parte de contacto */
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
