@@ -19363,7 +19363,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .nuevo-contacto i {
     font-size: 20px;
-    color: #4fbb75;
+    color: #1e4267;
     margin-right: 10px;
 }
 
@@ -19392,4 +19392,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     .nuevo-contacto li {
         justify-content: center;
     }
+}
+
+/* Centrar el logo en la primera columna */
+.nuevo-col-40 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el logo horizontalmente */
+    text-align: center; /* Centra el texto debajo del logo */
+}
+
+/* Ajuste del logo */
+.nuevo-logo {
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    margin-bottom: 10px;
 }
