@@ -19413,3 +19413,55 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     color: #4fbb75 !important; /* Usa el mismo verde que en la parte de contacto */
     transition: color 0.3s ease; /* Suaviza el cambio de color */
 }
+
+/* Estilos generales del header */
+.nuevo-header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+/* Ajuste del Logo */
+.nuevo-logo {
+    width: 180px; /* Ajusta el tamaño según necesidad */
+    height: auto;
+    display: block;
+}
+
+/* Menú: Estilos generales */
+.rd-navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.rd-navbar-nav li {
+    display: inline-block;
+}
+
+.rd-navbar-nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e4267; /* Color normal del texto */
+    transition: color 0.3s ease;
+}
+
+/* Hover: Cambia el color del menú */
+.rd-navbar-nav a:hover {
+    color: #4fbb75 !important; /* Color verde */
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .rd-navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nuevo-logo {
+        width: 150px; /* Reducir el logo en móviles */
+    }
+}
