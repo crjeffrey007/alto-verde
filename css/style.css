@@ -19493,23 +19493,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;  /* Hace el botón más grande */
-    height: 70px;
-    background-color: #4fbb75; /* Color de WhatsApp */
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    text-decoration: none;
+    width: 70px !important;  /* Hace el botón más grande */
+    height: 70px !important;
+    background-color: #4fbb75 !important; /* Color de WhatsApp */
+    border-radius: 50% !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    transition: transform 0.3s ease, background-color 0.3s ease !important;
+    text-decoration: none !important;
 }
 
 /* Estilos del icono */
 .whatsapp-flotante i {
-    font-size: 40px;  /* Tamaño del icono aumentado */
-    color: white;  /* Icono en color blanco */
+    font-size: 40px !important;  /* Tamaño del icono aumentado */
+    color: white !important;  /* Icono en color blanco */
 }
 
 /* Efecto hover */
 .whatsapp-flotante a:hover {
-    background-color: #1e4267; /* Cambia a azul oscuro en hover */
-    transform: scale(1.1);
+    background-color: #1e4267 !important; /* Cambia a azul oscuro en hover */
+    transform: scale(1.1) !important;
 }
