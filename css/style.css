@@ -19494,17 +19494,38 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     justify-content: center;
     width: 60px;
     height: 60px;
-    background-color: #4fbb75;
-    color: white;
-    font-size: 30px;
+    background-color: #4fbb75; /* Color verde de WhatsApp */
     border-radius: 50%;
-    text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+/* Imagen dentro del botón */
+.whatsapp-flotante img {
+    width: 40px; /* Ajusta el tamaño de la imagen */
+    height: 40px;
+}
+
 /* Efecto hover */
 .whatsapp-flotante a:hover {
-    background-color: #1e4267;
-    transform: scale(1.1);
+    background-color: #1e4267; /* Cambio de color en hover */
+    transform: scale(1.1); /* Aumenta un poco el tamaño */
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .whatsapp-flotante {
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .whatsapp-flotante a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-flotante img {
+        width: 35px;
+        height: 35px;
+    }
 }
