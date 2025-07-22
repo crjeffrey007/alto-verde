@@ -6719,14 +6719,14 @@ html:not(.lt-ie10) .not-animated {
 
 .rd-navbar-static .rd-navbar-nav > li > a:hover,
 .rd-navbar-sidebar .rd-navbar-nav > li > a:hover {
-	color: #2ed3ae;
+	color: #1e4267;
 }
 
 .rd-navbar-static .rd-navbar-nav > li.opened > a,
 .rd-navbar-static .rd-navbar-nav > li.active > a,
 .rd-navbar-sidebar .rd-navbar-nav > li.opened > a,
 .rd-navbar-sidebar .rd-navbar-nav > li.active > a {
-	color: #2ed3ae;
+	color: #1e4267;
 }
 
 .rd-navbar-static .rd-navbar-nav > li > .rd-navbar-submenu-toggle,
@@ -6778,7 +6778,7 @@ html:not(.lt-ie10) .not-animated {
 .rd-navbar-sidebar .rd-navbar-nav > li.focus > .rd-navbar-submenu-toggle::after,
 .rd-navbar-sidebar .rd-navbar-nav > li.opened > .rd-navbar-submenu-toggle::after,
 .rd-navbar-sidebar .rd-navbar-nav > li > a:hover + .rd-navbar-submenu-toggle::after {
-	color: #2ed3ae;
+	color: #1e4267;
 }
 
 .rd-navbar-static.rd-navbar_half-dark .rd-navbar-nav .rd-navbar-dropdown a, .rd-navbar-static.rd-navbar_half-dark .rd-navbar-nav .rd-navbar-dropdown a:active, .rd-navbar-static.rd-navbar_half-dark .rd-navbar-nav .rd-navbar-dropdown a:focus,
