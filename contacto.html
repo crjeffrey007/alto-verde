@@ -164,41 +164,30 @@
             </div>
             <div class="col-md-7 col-lg-8">
               <h4>Envianos un Mensaje</h4>
-              <!-- Formulario con FormSubmit + Google reCAPTCHA v2 invisible -->
-<form id="formulario-contacto" action="https://formsubmit.io/send/tu_email@gmail.com" method="POST">
-  <div class="form-wrap form-wrap_icon linear-icon-man">
-    <input class="form-input" type="text" name="name" placeholder="Nombre" required>
-  </div>
-
-  <div class="form-wrap form-wrap_icon linear-icon-envelope">
-    <input class="form-input" type="email" name="email" placeholder="Email" required>
-  </div>
-
-  <div class="form-wrap form-wrap_icon linear-icon-telephone">
-    <input class="form-input" type="text" name="phone" placeholder="Teléfono">
-  </div>
-
-  <div class="form-wrap form-wrap_icon linear-icon-feather">
-    <textarea class="form-input" name="message" placeholder="Mensaje" required></textarea>
-  </div>
-
-  <!-- Anti-spam y no redirigir -->
-  <input type="text" name="_formsubmit_id" style="display:none">
-  <input type="hidden" name="_captcha" value="false">
+              <form action="https://formsubmit.io/send/tu_email@gmail.com" method="POST" id="contact-form">
+  <input name="_formsubmit_id" type="text" style="display:none">
   <input type="hidden" name="_redirect" value="">
+  <input type="hidden" name="_captcha" value="false">
 
-  <!-- reCAPTCHA v2 invisible -->
-  <button class="g-recaptcha button button-primary"
-          data-sitekey="TU_SITE_KEY_AQUI"
-          data-callback="enviarFormulario"
-          data-action="submit">
-    Enviar
-  </button>
-
-  <!-- Mensaje de éxito -->
-  <div id="mensaje-exito" style="display:none; margin-top:15px; color:green;">
-    ✅ ¡Mensaje enviado con éxito!
+  <div class="form-wrap">
+    <input type="text" name="name" placeholder="Nombre" required>
   </div>
+
+  <div class="form-wrap">
+    <input type="email" name="email" placeholder="Correo" required>
+  </div>
+
+  <div class="form-wrap">
+    <input type="text" name="phone" placeholder="Teléfono">
+  </div>
+
+  <div class="form-wrap">
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+  </div>
+
+  <button type="submit" class="button">Enviar</button>
+
+  <p id="form-msg" style="display:none; margin-top: 10px; color: green;">✅ ¡Mensaje enviado correctamente!</p>
 </form>
             </div>
           </div>
@@ -283,28 +272,26 @@
         <i class="fa fa-whatsapp"></i>
        </a>
     </div>
-    <!-- Script de reCAPTCHA v2 -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+ <script>
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const form = e.target;
 
-<!-- Script para mostrar mensaje de éxito sin redirigir -->
-<script>
-function enviarFormulario(token) {
-  const form = document.getElementById('formulario-contacto');
-  fetch(form.action, {
-    method: 'POST',
-    body: new FormData(form),
-    headers: { 'Accept': 'application/json' }
-  }).then(response => {
-    if (response.ok) {
-      document.getElementById('mensaje-exito').style.display = 'block';
-      form.reset();
-    } else {
-      alert("Hubo un error al enviar el formulario.");
-    }
-  }).catch(error => {
-    alert("Error de red o conexión.");
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        form.reset();
+        document.getElementById("form-msg").style.display = "block";
+      } else {
+        alert("❌ Error al enviar el formulario.");
+      }
+    }).catch(() => {
+      alert("❌ Error de conexión.");
+    });
   });
-}
 </script>
   </body>
 </html>
