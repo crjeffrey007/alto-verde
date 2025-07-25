@@ -20,7 +20,7 @@
     <meta property="og:title" content="Agua Alto Verde | Agua Ozonizada en Guatapé, Antioquia, Colombia">
     <meta property="og:description" content="Somos una embotelladora de agua ozonizada en Guatapé. Proceso de filtración, luz ultravioleta y ozono garantizan calidad y pureza.">
     <meta property="og:image" content="https://www.altoverde.com.co/images/logo.png">
-    <meta property="og:url" content="https://www.altoverde.com.co/medio-ambiente.html">
+    <meta property="og:url" content="https://www.altoverde.com.co/contacto.html">
     <meta property="og:type" content="website"> 
 
       <!-- Twitter Card -->
@@ -164,30 +164,35 @@
             </div>
             <div class="col-md-7 col-lg-8">
               <h4>Envianos un Mensaje</h4>
-              <form action="https://formsubmit.io/send/tu_email@gmail.com" method="POST" id="contact-form">
-  <input name="_formsubmit_id" type="text" style="display:none">
-  <input type="hidden" name="_redirect" value="">
+              <form class="rd-mailform rd-mailform_style-1" action="https://formsubmit.io/send/tu_email@gmail.com" method="POST" id="formulario-contacto">
+  <div class="form-wrap form-wrap_icon linear-icon-man">
+    <input class="form-input" id="contact-name" type="text" name="name" required>
+    <label class="form-label" for="contact-name">Nombre</label>
+  </div>
+  <div class="form-wrap form-wrap_icon linear-icon-envelope">
+    <input class="form-input" id="contact-email" type="email" name="email" required>
+    <label class="form-label" for="contact-email">Email</label>
+  </div>
+  <div class="form-wrap form-wrap_icon linear-icon-telephone">
+    <input class="form-input" id="contact-phone" type="text" name="phone">
+    <label class="form-label" for="contact-phone">Teléfono</label>
+  </div>
+  <div class="form-wrap form-wrap_icon linear-icon-feather">
+    <textarea class="form-input" id="contact-message" name="message" required></textarea>
+    <label class="form-label" for="contact-message">Mensaje</label>
+  </div>
+
+  <!-- Anti-spam (honeypot) y sin redirección -->
+  <input type="text" name="_formsubmit_id" style="display:none">
   <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_redirect" value="">
 
-  <div class="form-wrap">
-    <input type="text" name="name" placeholder="Nombre" required>
+  <button class="button button-primary" type="submit">Enviar</button>
+
+  <!-- Mensaje de éxito -->
+  <div id="mensaje-exito" style="display:none; margin-top: 15px; color: green;">
+    ✅ ¡Mensaje enviado con éxito! Gracias por contactarnos.
   </div>
-
-  <div class="form-wrap">
-    <input type="email" name="email" placeholder="Correo" required>
-  </div>
-
-  <div class="form-wrap">
-    <input type="text" name="phone" placeholder="Teléfono">
-  </div>
-
-  <div class="form-wrap">
-    <textarea name="message" placeholder="Mensaje" required></textarea>
-  </div>
-
-  <button type="submit" class="button">Enviar</button>
-
-  <p id="form-msg" style="display:none; margin-top: 10px; color: green;">✅ ¡Mensaje enviado correctamente!</p>
 </form>
             </div>
           </div>
@@ -210,8 +215,9 @@
                 <ul class="nuevo-menu">
                     <li><a href="./">Inicio</a></li>
                     <li><a href="sobre-nosotros.html">Quienes Somos</a></li>
-                    <li><a href="medio-ambiente.html">Medio Ambiente</a></li>
                     <li><a href="productos.html">Productos</a></li>
+                    <li><a href="productos-personalizados.html">Productos Personalizados</a></li>
+                    <li><a href="medio-ambiente.html">Medio Ambiente</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
@@ -272,8 +278,9 @@
         <i class="fa fa-whatsapp"></i>
        </a>
     </div>
- <script>
-  document.getElementById("contact-form").addEventListener("submit", function(e) {
+<!-- Script para mostrar mensaje sin redirigir -->
+<script>
+  document.getElementById("formulario-contacto").addEventListener("submit", function(e) {
     e.preventDefault();
     const form = e.target;
 
@@ -284,12 +291,12 @@
     }).then(response => {
       if (response.ok) {
         form.reset();
-        document.getElementById("form-msg").style.display = "block";
+        document.getElementById("mensaje-exito").style.display = "block";
       } else {
-        alert("❌ Error al enviar el formulario.");
+        alert("❌ Error al enviar el mensaje.");
       }
     }).catch(() => {
-      alert("❌ Error de conexión.");
+      alert("❌ Error de conexión. Inténtalo más tarde.");
     });
   });
 </script>
