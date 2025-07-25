@@ -19536,3 +19536,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       margin-bottom: 1.5rem;
     }
   }
+
+.bg-cover-center {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px; /* Puedes ajustar esto según el diseño */
+}
+
+/* Opcional: para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .bg-cover-center {
+    min-height: 300px;
+  }
+}
