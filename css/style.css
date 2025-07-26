@@ -19550,3 +19550,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     min-height: 300px;
   }
 }
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.swiper-slider_fullheight {
+  height: 100vh;
+}
