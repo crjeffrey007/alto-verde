@@ -19589,7 +19589,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   height: 100%;
   text-align: center;
   color: #fff;
-  background-color: rgba(0,0,0,0.4); /* overlay oscuro para mejorar lectura */
+  background-color: rgba(0,0,0,0.1); /* overlay oscuro para mejorar lectura */
 }
 
 .swiper-slide-caption h1,
