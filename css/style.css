@@ -19579,20 +19579,3 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-position: center;
   overflow: hidden;
 }
-
-.swiper-slide-caption {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-  color: #fff;
-  background-color: rgba(0,0,0,0.1); /* overlay oscuro para mejorar lectura */
-}
-
-.swiper-slide-caption h1,
-.swiper-slide-caption h5 {
-  color: #fff;
-}
