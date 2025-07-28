@@ -19630,3 +19630,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .thumb-corporate__overlay {
   display: none !important;
 }
+
+.custom-thumb {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .custom-thumb:hover {
+    transform: scale(1.03);
+  }
+
+  .custom-product-img {
+    max-width: 80%;
+    height: auto;
+    filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.2));
+    background-color: #fff;
+    border-radius: 8px;
+  }
