@@ -12847,6 +12847,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .fa-linkedin:before {
 	content: "\f0e1";
+	color: #1e4267;
 }
 
 .fa-rotate-left:before,
@@ -13391,6 +13392,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .fa-instagram:before {
 	content: "\f16d";
+	color: #1e4267;
 }
 
 .fa-flickr:before {
@@ -14148,6 +14150,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .fa-whatsapp:before {
 	content: "\f232";
+	color: #1e4267;
 }
 
 .fa-server:before {
