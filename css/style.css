@@ -12619,6 +12619,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .fa-facebook-f:before,
 .fa-facebook:before {
 	content: "\f09a";
+	color: #1e4267;
 }
 
 .fa-github:before {
