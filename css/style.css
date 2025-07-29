@@ -19680,3 +19680,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border-radius: 8px;
   background-color: #fff;
 }
+
+.img-fluid.rounded.shadow {
+  max-width: 100%;
+  height: auto;
+}
